@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+	<nav>
+		<a href="/" class="link">About</a>
+		{{#if isAuthenticated}}
+		<a href="profile" class="link">Profile</a>
+		<a href="register" class="link">Log Out</a>
+		{{else}}
+		<a href="login" class="link">Login</a>
+		<a href="register" class="link">Register</a>
+		{{/if}}
+	</nav>
+
+	<div class="main">
+		<h2>Error</h2>
+		This link is broken or the page does not exist.
+	</div>
+	
+</body>
+</html>

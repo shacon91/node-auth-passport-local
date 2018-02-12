@@ -1,0 +1,109 @@
+body {
+	 margin: 0;
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 flex-flow: column nowrap;
+	 justify-content: center;
+	 align-items: center;
+}
+
+nav{
+	display: inline-block;
+	margin: 50px;
+}
+
+a:link{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 100px;
+	color: white;
+	background-color: #0066ff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+a:hover{
+	opacity:0.7;
+	text-decoration: underline;
+}
+
+a:visited{
+	color: white;
+}
+
+form{
+	display: block;
+	background-color: #0066ff;
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	padding:20px;
+	color: white;
+}
+
+form ul{
+	padding: 0;
+}
+
+form li{
+	display:block;
+	list-style: none;
+	height: 50px;
+	font-size: 22px;
+}
+
+form li label{
+	display: inline-block;
+	width: 200px;
+}
+
+form li input{
+	border:1px solid darkblue;
+	border-radius: 7px;
+	background-color: lightblue;
+	padding-left: 10px;
+	color:white;
+	height: 40px;
+	font-size: 22px;
+}
+
+::-webkit-input-placeholder{color: white;}
+:-ms-input-placeholder{color: white;}
+::-moz-placeholder{color: white;}
+
+input[type="submit"]{
+	width: 150px;
+	float: right;
+	margin-right: 40px;
+}
+
+input[type="submit"]:hover{
+	background-color: darkblue;
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.error{
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	padding: 5px 20px;
+	font-size: 20px;
+	background-color: #ff8080;
+	border:1px solid rgba(230, 0, 0,1);
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.main{
+	display: block;
+	width: 600px;
+	height: 300px;
+	background-color: #0066ff;
+	border: 1px solid darkblue;
+	border-radius: 10px;
+	padding:20px;
+	color: white;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+	<nav>
+		<a href="/" class="link">About</a>
+		<a href="login" class="link">Login</a>
+		<a href="register" class="link">Register</a>
+	</nav>
+	<form class="container" action="" method="POST">
+		{{#if errors}}
+		<li class="error">{{errors}}</li>
+		{{/if}}
+		<h2>Login</h2>
+		<ul>
+			<li><label for="email">Email</label><input type="email" name="email" placeholder="Email"></li>
+			<li><label for="password">Password</label><input type="password" name="password" placeholder="Password"></li>
+			<li><input type="submit"></li>
+		</ul>
+	</form>
+</body>
+</html>

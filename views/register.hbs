@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+	<nav>
+		<a href="/" class="link">About</a>
+		<a href="login" class="link">Login</a>
+		<a href="register" class="link">Register</a>
+	</nav>
+	<form class="container" action="" method="POST">
+		<h2>Register</h2>
+		<ul>
+		{{#if errorUser}}<li class="error">{{errorUser}}</li>{{/if}}
+
+			<li>
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Name">
+			</li>
+			{{#if errors.name}}<li class="error">{{errors.name.msg}}</li>{{/if}}
+
+			<li>
+				<label for="email">Email</label>
+				<input type="email" name="email"  placeholder="Email">
+			</li>
+			{{#if errors.email}}<li class="error">{{errors.email.msg}}</li>{{/if}}
+
+			<li>
+				<label for="password">Password</label>
+				<input type="password" name="password" placeholder="Pasword">
+			</li>
+			{{#if errors.password}}<li class="error">{{errors.password.msg}}</li>{{/if}}
+
+			<li>
+				<label for="password2">Re-enter Password</label>
+				<input type="password" name="password2"  placeholder="Re-enter Password">
+			</li>
+			{{#if errors.password2}}<li class="error">{{errors.password2.msg}}</li>{{/if}}
+
+			<li><input type="submit"></li>
+		</ul>
+	</form>
+</body>
+</html>
